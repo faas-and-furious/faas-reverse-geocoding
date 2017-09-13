@@ -5,13 +5,16 @@ Get address from GPS coordinates
 ### Build image
 
 ```
-docker build -t lucj/faas-reverse-geocoding .
+$ docker build -t lucj/faas-reverse-geocoding .
 ```
 
 ### Service creation
 
 ```
-faas-cli deploy --image lucj/faas-reverse-geocoding:latest --name ReverseGeocoding --fprocess="java -jar app-standalone.jar"
+$ faas-cli deploy \
+  --image lucj/faas-reverse-geocoding \ 
+  --name ReverseGeocoding \
+  --fprocess="java -jar app-standalone.jar"
 ```
 
 ### Usage
