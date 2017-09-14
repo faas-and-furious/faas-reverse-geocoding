@@ -31,3 +31,7 @@ curl -d 'LONGITUDE LATITUDE' http://localhost:8080/function/ReverseGeocoding
 $ curl -d '7.116703 43.581915' http://localhost:8080/function/ReverseGeocoding
 20 Avenue Reibaud, 06600 Antibes, France
 ```
+
+### See it in action
+
+![example](./images/faas-reverse-geocoding.gif)
